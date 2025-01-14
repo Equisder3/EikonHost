@@ -1,0 +1,87 @@
+            <div class="overlay" id="overlay" onclick="closePopup()"></div>
+            <div class="popup" id="popup">
+                <h2>Más Retos</h2>
+                <div class="cards">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-face card-front">
+                                <img src="cartas/carta1.png" alt="Frontal 1" style="width:100%; height:100%; border-radius:10px;">
+                            </div>
+                            <div class="card-face card-back">
+                                <img src="cartas/carta 1 atras.png" alt="Trasera 1" style="width:100%; height:100%; border-radius:10px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-face card-front">
+                                <img src="cartas/carta 2.png" alt="Frontal 2" style="width:100%; height:100%; border-radius:10px;">
+                            </div>
+                            <div class="card-face card-back">
+                                <img src="cartas/carta 2 atras.png" alt="Trasera 2" style="width:100%; height:100%; border-radius:10px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-face card-front">
+                                <img src="cartas/carta 3.png" alt="Frontal 3" style="width:100%; height:100%; border-radius:10px;">
+                            </div>
+                            <div class="card-face card-back">
+                                <img src="cartas/carta3 atras.png" alt="Trasera 3" style="width:100%; height:100%; border-radius:10px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-face card-front">
+                                <img src="cartas/carta4.png" alt="Frontal 4" style="width:100%; height:100%; border-radius:10px;">
+                            </div>
+                            <div class="card-face card-back">
+                                <img src="cartas/carta 4 atras.png" alt="Trasera 4" style="width:100%; height:100%; border-radius:10px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-face card-front">
+                                <img src="cartas/carta5.png" alt="Frontal 5" style="width:100%; height:100%; border-radius:10px;">
+                            </div>
+                            <div class="card-face card-back">
+                                <img src="cartas/carta 5 atrás.png" alt="Trasera 5" style="width:100%; height:100%; border-radius:10px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-face card-front">
+                                <img src="cartas/carta6.png" alt="Frontal 6" style="width:100%; height:100%; border-radius:10px;">
+                            </div>
+                            <div class="card-face card-back">
+                                <img src="cartas/carta 6 atras.png" alt="Trasera 6" style="width:100%; height:100%; border-radius:10px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-face card-front">
+                                <img src="cartas/carta 7.png" alt="Frontal 7" style="width:100%; height:100%; border-radius:10px;">
+                            </div>
+                            <div class="card-face card-back">
+                                <img src="cartas/carta 7 atras.png" alt="Trasera 7" style="width:100%; height:100%; border-radius:10px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-face card-front">
+                                <img src="cartas/carta 8.png" alt="Frontal 8" style="width:100%; height:100%; border-radius:10px;">
+                            </div>
+                            <div class="card-face card-back">
+                                <img src="cartas/carta 8 atras.png" alt="Trasera 8" style="width:100%; height:100%; border-radius:10px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="close" onclick="closePopup()">Cerrar</button>
+            </div>

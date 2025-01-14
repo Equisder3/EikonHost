@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO NERF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2.5em;
+        }
+
+        h1 span {
+            color: #ff6600; /* Naranja */
+        }
+
+        .hero-banner {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(to bottom, rgba(0, 51, 102, 0.8), rgba(0, 102, 204, 0.8)), url('path/to/your/background-image.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .hero-banner img {
+            position: absolute;
+            top: 20%;
+            max-width: 300px;
+        }
+
+        .campaign-description {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 40px auto;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .campaign-description div {
+            flex: 1;
+            margin: 0 20px;
+        }
+
+        .campaign-description h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .campaign-description h2 span {
+            color: #ff6600; /* Naranja */
+        }
+
+        .campaign-description p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .campaign-description img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            width: 351px;
+            height: 550px;
+            perspective: 1000px;
+            border-radius: 10px;
+
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+
+        }
+
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .card-front,
+        .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-front {
+            background-color: #ffffff;
+        }
+
+        .card-back {
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .card img {
+            max-width: 100%;
+            max-height: 70%;
+        }
+
+        .card-content {
+            font-size: 1em;
+            margin-top: 10px;
+        }
+        .hero-banner{
+            background-size: cover;
+        }
+        .imagenprimer{
+            width: 343px;
+            height: 450px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-banner" style="background-image: url('images/fondo\ nerf.jpg');">
+        <img src="images/desafio nefr.png" alt="Desafío Nerf Logo">
+    </div>
+
+    <div class="campaign-description">
+        <div>
+            <h2>CAMPAÑA <span>CREATIVA</span></h2>
+            <p>
+                La campaña "Desafío Nerf" combina adrenalina e innovación a través de cartas de desafíos que ponen a prueba tus habilidades con retos únicos, desde duelos épicos hasta dinámicas estratégicas en equipo. Además, promueve la interacción social y digital al permitirte compartir tus logros y competir en una comunidad global de fanáticos. ¡Acepta el desafío, supera cada carta y demuestra que estás listo para todo!
+            </p>
+        </div>
+        <video class="imagenprimer" id="imagenprimer" src="videos/presentación_2 nerf.mp4" controls></video>
+    </div>
+
+    <h1>NUESTRAS <span>TARJETAS</span></h1>
+
+    <div class="card-grid">
+        <!-- Tarjeta 1 -->
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front" style="background-image: url('cartas/carta1.png');">
+                </div>
+                <div class="card-back" style="background-image: url('cartas/carta\ 1\ atras.png');">
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front" style="background-image: url('cartas/carta\ 2.png');">
+                </div>
+                <div class="card-back" style="background-image: url('cartas/carta\ 2\ atras.png');">
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front" style="background-image: url('cartas/carta\ 3.png');">
+                </div>
+                <div class="card-back" style="background-image: url('cartas/carta3\ atras.png');">
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front" style="background-image: url('cartas/carta4.png');">
+                </div>
+                <div class="card-back" style="background-image: url('cartas/carta\ 4\ atras.png');">
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 5 -->
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front" style="background-image: url('cartas/carta5.png');">
+                </div>
+                <div class="card-back" style="background-image: url('cartas/carta\ 5\ atrás.png');">
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 6 -->
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front" style="background-image: url('cartas/carta6.png');">
+                </div>
+                <div class="card-back" style="background-image: url('cartas/carta\ 6\ atras.png');">
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 7 -->
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front" style="background-image: url('cartas/carta\ 7.png');">
+                </div>
+                <div class="card-back" style="background-image: url('cartas/carta\ 7\ atras.png');">
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 8 -->
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front" style="background-image: url('cartas/carta\ 8.png');">
+                </div>
+                <div class="card-back" style="background-image: url('cartas/carta\ 8\ atras.png');">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const video = document.querySelector('imagenprimer');
+        const playButton = video.querySelector('.vjs-play-control');
+
+        playButton.style.backgroundColor = 'transparent';
+        playButton.style.borderColor = 'blue';
+    </script>
+</body>
+</html>
